@@ -5,7 +5,7 @@ public class ex3MegaBytesConverter {
         int kiloBytes = 5000;
         printMegaBytesAndKiloBytes(kiloBytes);
     }
-    public static void printMegaBytesAndKiloBytes(int kiloBytes){
+    private static void printMegaBytesAndKiloBytes(int kiloBytes){
         if(kiloBytes < 0 ){
             System.out.printf("Invalid Value");
         }

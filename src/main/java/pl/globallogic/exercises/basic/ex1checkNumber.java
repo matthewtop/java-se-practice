@@ -2,10 +2,10 @@ package pl.globallogic.exercises.basic;
 
 public class ex1checkNumber {
     public static void main(String[] args) {
-        int number = 0;
+        int number = 5;
         checkNumber(number);
     }
-    public static void checkNumber(int number){
+    private static void checkNumber(int number){
         if(number > 0){
             System.out.printf("positive");
         }

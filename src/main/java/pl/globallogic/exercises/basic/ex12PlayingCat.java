@@ -6,7 +6,7 @@ public class ex12PlayingCat {
         int temperature = 35;
         isCatPlaying(summer,temperature);
     }
-    public static boolean isCatPlaying (boolean summer, int temperature){
+    private static boolean isCatPlaying (boolean summer, int temperature){
         if(temperature >=25 && temperature <= 35 ){
 //            System.out.printf("true");
             return true;

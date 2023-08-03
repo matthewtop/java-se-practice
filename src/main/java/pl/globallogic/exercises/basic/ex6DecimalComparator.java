@@ -8,7 +8,7 @@ public class ex6DecimalComparator {
 
 
     }
-    public static boolean areEqualByThreeDecimalPlaces (double number, double number2){
+    private static boolean areEqualByThreeDecimalPlaces (double number, double number2){
         number = (int) (number*1000);
         number2 = (int) (number*1000);
         if(number == number2){

@@ -5,7 +5,7 @@ public class ex10MinutesToYearsAndDaysCalculator {
         long minutes = 561600;
         printYearsAndDays(minutes);
     }
-    public static void printYearsAndDays(long minutes){
+    private static void printYearsAndDays(long minutes){
         if(minutes<0){
             System.out.printf("Invalid value");
         }
