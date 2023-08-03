@@ -1,6 +1,6 @@
 package pl.globallogic.exercises.intermediate;
 
-public class ex1NumberInWord {
+public class ex13NumberInWord {
     public static void main(String[] args) {
         printNumberInWord(0);
         printNumberInWord(6);
