@@ -36,7 +36,6 @@ public class ex24NumberToWords {
             return;
         }
 
-
         while(reversedNumber != 0){
             int lastDigit = reversedNumber % 10;
             switch (lastDigit){
@@ -72,7 +71,6 @@ public class ex24NumberToWords {
                     break;
             }
             reversedNumber /=10;
-
         }
         int digitCount = getDigitCount(number);
         int reversedDigitCount = getDigitCount(reverse(number));
@@ -80,9 +78,6 @@ public class ex24NumberToWords {
         for(int i=0;i<zerosToPrint; i++){
             System.out.printf("Zero ");
         }
-
-
-
 
     }
 
@@ -96,8 +91,6 @@ public class ex24NumberToWords {
             number /=10;
         }
         return reversedNumber;
-
-
 
     }
 
