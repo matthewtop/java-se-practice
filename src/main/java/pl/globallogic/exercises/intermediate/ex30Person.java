@@ -17,44 +17,46 @@ public class ex30Person {
         System.out.println("fullName= " + person.getFullName());
 
     }
-    static class Person{
-        private String firstName;
-        private String lastName;
-        private int age;
 
-        public String getFirstName(){
-            return firstName;
-        }
-        public String getLastName(){
-            return lastName;
-        }
-        public int getAge(){
-            return age;
-        }
-        public void setFirstName(String firstName){
-            this.firstName = firstName;
-        }
-        public void setLastName(String lastName){
-            this.lastName=lastName;
-        }
-        public void setAge(int age){
-            if(age<0||age>100){
-                age=0;
-            }
-            this.age=age;
-        }
-        public boolean isTeen(){
-            getAge();
-            return (age>12&&age<20);
-        }
-        public String getFullName(){
-            getFirstName();
-            getLastName();
-            if(firstName.isEmpty()&&lastName.isEmpty()){
-                return "";
-            }
-            return firstName+lastName;
-        }
+}
 
+class Person{
+    private String firstName;
+    private String lastName;
+    private int age;
+
+    public String getFirstName(){
+        return firstName;
     }
+    public String getLastName(){
+        return lastName;
+    }
+    public int getAge(){
+        return age;
+    }
+    public void setFirstName(String firstName){
+        this.firstName = firstName;
+    }
+    public void setLastName(String lastName){
+        this.lastName=lastName;
+    }
+    public void setAge(int age){
+        if(age<0||age>100){
+            age=0;
+        }
+        this.age=age;
+    }
+    public boolean isTeen(){
+        getAge();
+        return (age>12&&age<20);
+    }
+    public String getFullName(){
+        getFirstName();
+        getLastName();
+        if(firstName.isEmpty()&&lastName.isEmpty()){
+            return "";
+        }
+        return firstName+lastName;
+    }
+
 }
