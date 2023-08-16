@@ -6,10 +6,12 @@ public class Car implements Driveable{
         start();
     }
 
+    @Override
     public void stop() {
         stop();
     }
 
+    @Override
     public void ignite() {
         ignite();
     }
