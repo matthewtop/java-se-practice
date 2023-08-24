@@ -18,12 +18,12 @@ public class ex46Bank {
 }
 
 class Customer{
-    private String name;
-    private ArrayList<Double> transactions;
+    private final String name;
+    private final ArrayList<Double> transactions;
 
     Customer(String name, double initialTransaction){
         this.name=name;
-        this.transactions=new ArrayList<Double>();
+        this.transactions= new ArrayList<>();
         addTransaction(initialTransaction);
     }
 
@@ -41,12 +41,12 @@ class Customer{
 }
 
 class Branch{
-    private String name;
-    private ArrayList<Customer> customers;
+    private final String name;
+    private final ArrayList<Customer> customers;
 
     Branch(String branchName){
         this.name=branchName;
-        this.customers= new ArrayList<Customer>();
+        this.customers= new ArrayList<>();
     }
 
      public String getName(){
@@ -87,11 +87,11 @@ class Branch{
 
 class Bank{
     private String name;
-    private ArrayList<Branch> branches;
+    private final ArrayList<Branch> branches;
 
     Bank(String name){
         this.name=name;
-        this.branches= new ArrayList<Branch>();
+        this.branches= new ArrayList<>();
     }
 
     public boolean addBranch(String branchName){
