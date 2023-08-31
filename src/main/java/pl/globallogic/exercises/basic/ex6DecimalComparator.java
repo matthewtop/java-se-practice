@@ -2,24 +2,16 @@ package pl.globallogic.exercises.basic;
 
 public class ex6DecimalComparator {
     public static void main(String[] args) {
-        double number = -3.1756;
-        double number2 = -3.175;
-        areEqualByThreeDecimalPlaces(number,number2);
-
+        System.out.println(areEqualByThreeDecimalPlaces(-3.1756,-3.175));
+        System.out.println(areEqualByThreeDecimalPlaces(3.175,3.176));
+        System.out.println(areEqualByThreeDecimalPlaces(3.0,3.0));
+        System.out.println(areEqualByThreeDecimalPlaces(-3.123,3.123));
 
     }
-    public static boolean areEqualByThreeDecimalPlaces (double number, double number2){
-        number = (int) (number*1000);
-        number2 = (int) (number*1000);
-        if(number == number2){
-            System.out.printf("numbers are equal");
-            return true;
-
-        }
-        else {
-            System.out.printf("numbers are not equal");
-            return false;
-        }
+    private static boolean areEqualByThreeDecimalPlaces (double number1, double number2){
+        int num1 = (int) (number1*1000);
+        int num2 = (int) (number2*1000);
+        return num1 == num2;
 
     }
 }
