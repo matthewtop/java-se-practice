@@ -1,4 +1,8 @@
 package pl.globallogic.exercises.intermediate;
+//Write a method called isPalindrome with one int parameter called number.
+//        The method needs to return a boolean.
+//        It should return true if the number is a palindrome number otherwise it should return
+//        false.
 
 public class ex16NumberPalindrome {
     public static void main(String[] args) {
@@ -16,7 +20,5 @@ public class ex16NumberPalindrome {
             number /= 10;
         }
         return numberToRevert == revert;
-
-
     }
 }
